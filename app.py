@@ -3,8 +3,8 @@ import pandas as pd
 import sys
 import logging
 import web_scrap_red_bus
-import Scripts.web_scraping_ixigo
-import Scripts.best_outcome as best_outcome
+import web_scraping_ixigo
+import best_outcome
 import numpy as np
 import time
 import os
