@@ -1,0 +1,46 @@
+
+<h1>Too many options.... Confused!</h1>
+<div id="formbody">
+        <form id="form" action="{{ url_for('best')}}" method="POST">
+            <div>
+            <label for='Time in Day'>Time in Day</label>
+            <select name="Time in Day" id="Time in Day">
+                <option value=0>Early Morning</option>
+                <option value=1>Morning</option>
+                <option value=2>Afternoon</option>
+                <option value=3>Evening</option>
+                <option value=4>Night</option>
+                <option value=5>Late Night</option>
+            </select>
+            </div>
+            <div>
+            <label for='Price'>Price</label>
+            <select name="Price" id="Price">
+                <option value=0>Low</option>
+                <option value=1>Medium</option>
+                <option value=2>High</option>
+            </select>
+            </div>
+            <div>
+            <label for='Rating'>Rating</label>
+            <select name="Rating" id="Rating">
+                <option value=0>Bad</option>
+                <option value=1>Average</option>
+                <option value=2>Good</option>
+            </select>
+            </div>
+            <div>
+            <label for='Speed'>Speed</label>
+            <select name="Speed" id="Speed">
+                <option value=0>Very Slow</option>
+                <option value=1>Slow</option>
+                <option value=2>Average</option>
+                <option value=3>Fast</option>
+                <option value=4>Super Fast</option>
+                <option value=5>Late Night</option>
+            </select>
+            </div>
+
+        </form>
+  <button type="submit" form="form" name="submit" value="Submit">Submit</button></a>
+</div>

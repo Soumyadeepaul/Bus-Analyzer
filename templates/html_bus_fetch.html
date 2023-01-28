@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Data</title>
+    <style>
+        #formbody{
+            max-width:510px;
+            margin:auto;
+            padding:20px;
+            background-color:pink;
+        }
+        #form{
+            display:table-cell;
+            text-align:left;
+            vertical-align: middle;
+        }
+        #firstname{
+            color:red;
+            background-color:yellow;
+        }
+        #heading{
+            font: bold;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Know About Bus</h1>
+    <h3 id="describe">Dont worry! we are here for you</h3>
+    <div id="formbody">
+        <form id="form" action="{{ url_for('form_detail')}}" method="post">
+            <div>
+            <label for="firstname">First name</label>
+            <input type="text" id='firstname' name="fname" placeholder="Name" required>
+            <label for='lastname'>Last name</label>
+            <input type="text" id='lastname' name="lname" placeholder="Surname" required>
+            </div>
+            <div>
+            <label for='gender'>Gender</label>
+            <select name="gender" id="gender">
+                <option value=0>Male</option>
+                <option value=1>Female</option>
+            </select>
+            </div>
+            <div>
+            <label for='FROM'>FROM</label>
+            <input type="text" id='FROM' name="FROM" required>
+            </div>
+            <div>
+            <label for='TO'>TO</label>
+            <input type="text" id='TO' name="TO" required>
+            </div>
+            <div>
+            <label for='DATE '>DATE</label>
+            <input type="text" id='DATE' name="DATE" placeholder="10 Jan 2002" required>
+            </div>
+
+        </form>
+        <button type="submit" form="form" name="submit" value="Submit">Submit</button>
+    </div>
+
+</body>
+</html>

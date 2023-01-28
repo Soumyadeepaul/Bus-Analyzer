@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+</head>
+<body>
+    <table border="1" class="dataframe" id="table">
+        <thead>
+        <tr style="text-align: right;">
+            {% for header in headers %}
+                <th>{{header}}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+            {% for rows in results %}
+            <tr>
+                {% for i in rows %}
+                <td>{{i}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('result')}}"><button type="submit" name="submit" value="Submit">Go_back</button></a>
+</body>
+</html>
